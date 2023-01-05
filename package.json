@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "@esbuild-plugins/node-modules-polyfill": "^0.1.4",
+    "cypress": "^12.1.0",
+    "cypress-mochawesome-reporter": "^3.2.3"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/e2e/cucumber/**/*.{js,ts}",
+    "html": {
+      "enabled": true,
+      "output": "reports/html/cucumber-report.html"
+    },
+    "messages": {
+      "enabled": false
+    }
+  }
+}
